@@ -1,16 +1,16 @@
 <script>
 	import Circle from '$lib/Circle.svelte'
 	import Rect from '$lib/Rect.svelte'
-    import DeclutterSVG from '$lib/DeclutterSVG.svelte'
+    import DustyDataSVG from '$lib/DustyDataSVG.svelte'
 	
-	let selected = DeclutterSVG 
+	let selected = DustyDataSVG 
 </script>
 
 
-<!-- <h1>Declutter</h1> -->
+<!-- <h1>DustyData</h1> -->
 <svelte:component this={selected} />
-<button on:click={()=> selected = DeclutterSVG}>
-	Make it Declutter
+<button on:click={()=> selected = DustyDataSVG}>
+	Make it DustyData
 </button>
 
 <button on:click={()=> selected = Rect}>
